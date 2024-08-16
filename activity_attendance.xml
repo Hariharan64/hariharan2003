@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!-- GridView Calendar -->
+    <GridView
+        android:id="@+id/gridViewCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="7"
+        android:padding="8dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="8dp" />
+
+    <!-- Punch In Button -->
+    <Button
+        android:id="@+id/punchInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gridViewCalendar"
+        android:text="Punch In" />
+
+    <!-- Punch Out Button -->
+    <Button
+        android:id="@+id/punchOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/punchInButton"
+        android:text="Punch Out" />
+
+</RelativeLayout>
